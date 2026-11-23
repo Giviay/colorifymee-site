@@ -36,7 +36,7 @@
 
   <h2 id="summary">1. Summary</h2>
   <ul>
-    <li>No sign-up: the app signs you in anonymously. We don’t ask for your name, email or password.</li>
+    <li>Sign-in is optional: without it the app uses an anonymous account. If you sign in, we store only your email address or Apple / Google account ID. There’s never a password.</li>
     <li>The photo or prompt you choose is sent to our AI provider only to make your coloring page, and isn’t kept on our servers afterwards.</li>
     <li>Your pages, artwork and child profiles are stored on your device.</li>
     <li>We don’t sell your information, show ads, or use third-party tracking.</li>
@@ -44,9 +44,9 @@
 
   <h2 id="collect">2. Information we process</h2>
   <p><strong>Photos and prompts you submit.</strong> When you create a page, the photo or text prompt you choose, along with your style settings, is sent over an encrypted connection to our server and on to our AI image provider to generate the page. The app asks for your permission before anything is sent, and you can turn this off at any time in More → AI page creation. We don’t keep your photos or prompts on our servers after the page is created, and we don’t use them for advertising or to train our own models.</p>
-  <p><strong>Anonymous account.</strong> We create an anonymous user ID for your installation and store a count of pages you’ve created, so we can apply free-page limits and prevent abuse.</p>
+  <p><strong>Your account.</strong> We create an anonymous user ID for your installation and store a count of pages you’ve created, so we can apply free-page limits and prevent abuse. If you choose to sign in with Apple, Google or email, we also store your email address (Apple may give us a private relay address), your Apple or Google account ID, and the name they share, so you can use the app on other devices.</p>
   <p><strong>Community (family circles).</strong> If you create or join a family circle, we store the display name you choose, the artwork photos and captions you share, likes, comments, reports, blocks and circle activity notifications, so other members of that circle can see them. Only members of a circle can see its content.</p>
-  <p><strong>Purchases.</strong> If paid features are offered, payments are handled by the Apple App Store or Google Play. We don’t receive your card details; we may receive confirmation of what you’ve purchased so we can unlock it.</p>
+  <p><strong>Purchases.</strong> Colorifymee Plus is sold through the Apple App Store or Google Play, which handle payment. We don’t receive your card details. Our subscription provider, RevenueCat, receives your purchase and subscription status together with your account ID, so Plus works on all your devices.</p>
   <p><strong>Support messages.</strong> If you email us, we receive your email address and whatever you include in your message.</p>
 
   <h2 id="device">3. What stays on your device</h2>
@@ -65,7 +65,8 @@
   <p>We share information only with service providers that help us run the app, and only as needed:</p>
   <ul>
     <li><strong>OpenAI</strong>: generates coloring pages from your photo or prompt. Under its API terms, data sent through the API isn’t used to train its models by default.</li>
-    <li><strong>Supabase</strong>: hosts our server, database and storage (anonymous account, page counts and family circle content).</li>
+    <li><strong>Supabase</strong>: hosts our server, database and storage, and handles sign-in (account, page counts and family circle content).</li>
+    <li><strong>RevenueCat</strong>: manages Colorifymee Plus subscriptions (purchase history and subscription status, linked to your account ID).</li>
     <li><strong>Apple and Google</strong>: process in-app purchases and deliver the app.</li>
   </ul>
   <p>We may also disclose information if required by law, or to protect the safety of our users. We don’t sell or rent personal information, and we don’t share it for cross-context behavioral advertising.</p>
@@ -75,7 +76,7 @@
     <li>Photos and prompts: not stored after your page is generated. Our AI provider may keep API data for a limited time (typically up to 30 days) for abuse monitoring, then delete it.</li>
     <li>Family circle content: kept until you delete it, delete the circle, use Delete my data, or ask us to delete it.</li>
     <li>Reports and blocks: kept while needed to review them and keep circles safe, and deleted with your account.</li>
-    <li>Anonymous ID and page count: kept while you use the app, and deleted on request.</li>
+    <li>Account (ID, email, page count, Plus status): kept while you use the app, and deleted when you use Delete my data or ask us.</li>
   </ul>
 
   <h2 id="permissions">7. Device permissions</h2>
@@ -90,12 +91,12 @@
     <li><strong>Delete everything</strong> in More → Delete my data. This permanently deletes your account and all server data (circles you own, posts, comments, likes, reports and page counts) and clears the app’s data on your device.</li>
     <li>Turn off sending photos and prompts to our AI provider in More → AI page creation.</li>
     <li>Delete everything stored on your device by deleting the app.</li>
-    <li>Ask us to access or correct information linked to your anonymous account, or to delete it for you, by emailing us. Because there’s no login, we may ask for details that help us find your data (for example, the name of a circle you joined).</li>
+    <li>Ask us to access or correct information linked to your account, or to delete it for you, by emailing us. Because there’s no login, we may ask for details that help us find your data (for example, the name of a circle you joined).</li>
   </ul>
   <p>Depending on where you live (for example in the EEA, UK or California), you may have additional rights, such as to object to or restrict processing, to data portability, or to complain to your local data protection authority. Where the GDPR applies, we rely on performance of a contract (making the pages you ask for and running circles you join) and our legitimate interests (keeping the service safe) as legal bases. We will not discriminate against you for exercising your rights.</p>
 
   <h2 id="security">10. Security</h2>
-  <p>Information is sent over encrypted connections, and access to family circle content is restricted to circle members. No method of transmission or storage is completely secure, but we work to protect your information.</p>
+  <p>Information is sent over encrypted connections, sign-in uses one-time codes or your Apple / Google account (no passwords), and access to family circle content is restricted to circle members. No method of transmission or storage is completely secure, but we work to protect your information.</p>
 
   <h2 id="transfers">11. International transfers</h2>
   <p>Our service providers may process information in the United States and other countries. Where required, we rely on appropriate safeguards such as standard contractual clauses.</p>
